@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Clickuper Bold';
+    src: url('fonts/clickuper-webfont.woff2') format('woff2'),
+        url('fonts/clickuper-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana Pro'
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #33312F;
+    line-height: 1.6;
+}
+main {
+    flex: 1;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1, h2, h3 {
+    color: #EFB85F;
+    font-family: 'Clickuper Bold';
+}
+p {
+    color: #EDEDED;
+}
+header {
+    background: #2a2827;
+    color: #fff;
+    padding: 20px 0;
+}
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+header nav ul li a:hover {
+    color: #f4b400;
+}
+footer {
+    background: #2a2827;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    vertical-align: bottom;
+}
+#hero {
+    color: #000;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f4b400;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+.btn:hover {
+    background: #e69500;
+}
+section {
+    padding: 60px 0;
+}
+#about, #contact {
+    background: #33312F;
+    text-align: center;
+}
+#projects {
+    text-align: center;
+}
+#projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.project {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
