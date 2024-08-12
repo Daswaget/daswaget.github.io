@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Clickuper Bold';
-    src: url('clickuper-webfont.woff2') format('woff2'),
-        url('clickuper-webfont.woff') format('woff');
+    src: url('../fonts/clickuper-webfont.woff2') format('woff2'),
+        url('../fonts/clickuper-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
