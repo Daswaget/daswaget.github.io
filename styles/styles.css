@@ -121,7 +121,7 @@ section {
 }
 @media (max-width: 768px) {
     #hero h2 {
-        font-size: 2.0rem;
+        font-size: 3.0rem;
     }
     #hero p {
         font-size: 1.2rem;
