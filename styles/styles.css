@@ -120,7 +120,7 @@ section {
     margin-bottom: 10px;
 }
 @media (max-width: 768px) {
-    #hero h2 {
+    #hero h1 {
         font-size: 2.5rem;
     }
     #hero p {
