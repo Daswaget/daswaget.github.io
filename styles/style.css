@@ -1,0 +1,70 @@
+@font-face
+{
+    font-family: 'Roboto';
+    src: url('../fonts/roboto.ttf') format('truetype');
+}
+
+*
+{
+    margin: 0;
+	padding: 0;
+    font-family: 'Roboto'
+}
+
+body
+{
+    margin: 0;
+    min-height: 100vh;
+
+    background:
+        repeating-linear-gradient(
+            to bottom,
+            rgba(0,0,0,0.10) 0px,
+            rgba(0,0,0,0.10) 8px,
+            transparent 16px,
+            transparent 24px,
+            rgba(0,0,0,0.10) 32px
+        ),
+        linear-gradient(
+            to right,
+            #05352A 0%,
+            #000000 20%,
+            #000000 20%,
+            #05352A 100%
+        );
+}
+
+p
+{
+    font-size: 24pt;
+    color: #0EE59F;
+}
+
+header
+{
+	position: fixed;
+	width: 100%;
+	z-index: 50;
+	border-radius: 0;
+	top: 0px;
+}
+
+.header_container
+{
+    background:
+        linear-gradient(
+            to bottom,
+            #05352A 0%,
+            rgba(5, 53, 42, 0) 100%
+        ),
+        linear-gradient(
+            to right,
+            #05352A 0%,
+            #000000 20%,
+            #000000 80%,
+            #05352A 100%
+        );
+
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+}
