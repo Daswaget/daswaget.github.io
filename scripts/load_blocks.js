@@ -12,6 +12,6 @@ function loadContent(url, elementId) {
         .catch(error => console.error('Error:', error));
 }
 document.addEventListener("DOMContentLoaded", function () {
-    loadContent('../blocks/header.html', 'header');
-    loadContent('blocks/footer.html', 'footer');
+    loadContent('/blocks/header.html', 'header');
+    loadContent('/blocks/footer.html', 'footer');
 });
