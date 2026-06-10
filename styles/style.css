@@ -119,11 +119,11 @@ footer {
 
 .menu-button {
     position: fixed;
-    top: 15px;
+    top: 7px;
 
     background: #222;
     border: 1px solid #0BA572;
-    padding: 6px 12px;
+    padding: 6px 9px 3px 9px;
     cursor: pointer;
     font-size: 13pt;
     color: #0EE59F;
