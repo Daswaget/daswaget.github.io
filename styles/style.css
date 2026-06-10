@@ -117,14 +117,15 @@ footer {
 }
 
 .menu-button {
-    position: fixed;
-    top: 7px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
 
-    background: #222;
-    border: 1px solid #0BA572;
-    padding: 6px 9px 3px 9px;
+    position: fixed;
+    top: 15px;
+
     cursor: pointer;
-    font-size: 13pt;
     color: #0EE59F;
     font-family: 'Play';
 
@@ -136,15 +137,16 @@ footer {
 }
 
 .menu-button:hover {
-    background: #333;
+    color: #94e7cd;
 }
 
 .dropdown {
     position: fixed;
     top: 60px;
+    left: 24px;
     padding: 6px;
     z-index: 999;
-    background: #1a1a1a;
+    background: #1a1a1acc;
     border: 1px solid #0BA572;
     display: flex;
     flex-direction: column;
@@ -166,7 +168,8 @@ footer {
 }
 
 .dropdown a:hover {
-    background: #333;
+    background: #333333cc;
+    color: #94e7cd;
 }
 
 .hidden {
