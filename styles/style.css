@@ -2,6 +2,7 @@
 {
     font-family: 'Play';
     src: url('../fonts/play.ttf') format('truetype');
+    font-display: swap
 }
 
 
@@ -9,6 +10,7 @@
 {
     font-family: 'Exo';
     src: url('../fonts/exo2.ttf') format('truetype');
+    font-display: swap
 }
 
 *
