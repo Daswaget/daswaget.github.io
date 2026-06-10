@@ -1,14 +1,21 @@
 @font-face
 {
-    font-family: 'Roboto';
-    src: url('../fonts/roboto.ttf') format('truetype');
+    font-family: 'Play';
+    src: url('../fonts/play.ttf') format('truetype');
+}
+
+
+@font-face
+{
+    font-family: 'Exo';
+    src: url('../fonts/exo2.ttf') format('truetype');
 }
 
 *
 {
     margin: 0;
 	padding: 0;
-    font-family: 'Roboto'
+    font-family: 'Exo'
 }
 
 body
@@ -20,42 +27,10 @@ body
         repeating-linear-gradient(
             to bottom,
             rgba(0,0,0,0.10) 0px,
-            rgba(0,0,0,0.10) 8px,
-            transparent 16px,
-            transparent 24px,
-            rgba(0,0,0,0.10) 32px
-        ),
-        linear-gradient(
-            to right,
-            #05352A 0%,
-            #000000 20%,
-            #000000 20%,
-            #05352A 100%
-        );
-}
-
-p
-{
-    font-size: 24pt;
-    color: #0EE59F;
-}
-
-header
-{
-	position: fixed;
-	width: 100%;
-	z-index: 50;
-	border-radius: 0;
-	top: 0px;
-}
-
-.header_container
-{
-    background:
-        linear-gradient(
-            to bottom,
-            #05352A 0%,
-            rgba(5, 53, 42, 0) 100%
+            rgba(0,0,0,0.10) 10px,
+            transparent 20px,
+            transparent 30px,
+            rgba(0,0,0,0.10) 40px
         ),
         linear-gradient(
             to right,
@@ -64,7 +39,184 @@ header
             #000000 80%,
             #05352A 100%
         );
+}
+
+p
+{
+    font-size: 14pt;
+    color: #0EE59F;
+}
+
+.content {
+    width: min(90vw, 1100px);
+
+    margin: 0 auto;
+
+    padding:
+        clamp(20px, 4vw, 40px)
+        clamp(15px, 3vw, 30px);
+
+    box-sizing: border-box;
+}
+
+.content p {
+    font-size: 14pt;
+    line-height: 1.6;
+    text-align: justify;
+    color: #0EE59F;
+    white-space: pre-line;
+    font-family: 'Exo'
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #111;
+    height: 40px;
+}
+
+.header-left {
+    position: relative;
+}
+
+.header-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0px 10px 0px
+}
+
+.footer-center p {
+    color: #0BA572;
+    font-family: 'Play';
+    white-space: nowrap;
+}
+
+.logo,
+.logo:link,
+.logo:visited,
+.logo:hover,
+.logo:active {
+    font-size: 24pt;
+    color: #0EE59F;
+    font-family: 'Play';
+    text-decoration: none;
+
+    user-select: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.menu-button {
+    position: fixed;
+    top: 15px;
+
+    background: #222;
+    border: 1px solid #0BA572;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 13pt;
+    color: #0EE59F;
+    font-family: 'Play';
+
+    user-select: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.menu-button:hover {
+    background: #333;
+}
+
+.dropdown {
+    position: fixed;
+    top: 60px;
+    padding: 6px;
+    z-index: 999;
+    background: #1a1a1a;
+    border: 1px solid #0BA572;
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+}
+
+.dropdown a {
+    padding: 10px 10px 10px 15px;
+    text-decoration: none;
+    font-size: 13pt;
+    color: #0EE59F;
+    font-family: 'Play';
+
+    user-select: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.dropdown a:hover {
+    background: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+.top_screen_effect
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 10vh;
+
+    z-index: -1;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #000000 0%,
+            transparent 100%
+        ),
+        linear-gradient(
+            to right,
+            #000000 0%,
+            transparent 8%,
+            transparent 92%,
+            #000000 100%
+        );
 
     -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+}
+
+.bottom_screen_effect
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    z-index: -1;
+
+    background:
+        linear-gradient(
+            to top,
+            #000000 0%,
+            rgba(0, 0, 0, 0.5) 10%,
+            transparent 100%
+        )
 }
