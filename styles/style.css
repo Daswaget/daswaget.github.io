@@ -19,6 +19,11 @@
 	padding: 0;
 }
 
+::selection {
+    background: #0EE59F;
+    color: #000000;
+}
+
 body
 {
     margin: 0;
@@ -49,7 +54,7 @@ p
 }
 
 .content {
-    width: min(80vw, 1100px);
+    width: min(82vw, 1100px);
 
     margin: 0 auto;
 
@@ -64,7 +69,7 @@ p
 
 .content p {
     margin-bottom: 12px;
-    font-size: clamp(14px, 2vw, 18px);
+    font-size: clamp(15px, 2vw, 18px);
     line-height: 1.6;
     text-align: justify;
     color: #0EE59F;
@@ -191,6 +196,7 @@ footer {
     width: 100%;
     height: 115px;
 
+    pointer-events: none;
     z-index: 100;
 
     background:
@@ -220,6 +226,7 @@ footer {
     width: 100%;
     height: 100vh;
 
+    pointer-events: none;
     z-index: -1;
 
     background:
@@ -240,6 +247,7 @@ footer {
     width: 100%;
     height: 100vh;
 
+    pointer-events: none;
     z-index: 100;
 
     background:
