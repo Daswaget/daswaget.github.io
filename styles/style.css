@@ -76,10 +76,11 @@ p
     font-family: 'Exo'
 }
 
-.site-header {
+header {
     display: flex;
     align-items: center;
     padding: 10px 20px;
+    margin-bottom: 40px;
     height: 40px;
 }
 
@@ -96,8 +97,16 @@ p
 
 footer {
     display: flex;
-    justify-content: center;
-    margin: 60px 0px 10px 0px;
+    align-items: center;
+    display: flex;
+    margin: 60px 0px 35px 0px;
+}
+
+.footer-center p {
+    z-index: 150;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .footer-center p {
@@ -155,7 +164,7 @@ footer {
     top: 60px;
     left: 2%;
     padding: 6px;
-    z-index: 999;
+    z-index: 300;
     background: #000000cc;
     border: 1px solid #0BA572;
     display: flex;
