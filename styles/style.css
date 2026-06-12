@@ -5,14 +5,6 @@
     font-display: swap
 }
 
-
-@font-face
-{
-    font-family: 'Exo';
-    src: url('../fonts/exo2.ttf') format('truetype');
-    font-display: swap
-}
-
 *
 {
     margin: 0;
@@ -73,7 +65,7 @@ p
     line-height: 1.6;
     text-align: justify;
     color: #0EE59F;
-    font-family: 'Exo'
+    font-family: 'Play'
 }
 
 header {
