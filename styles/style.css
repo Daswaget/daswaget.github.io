@@ -57,12 +57,14 @@ p
         clamp(20px, 4vw, 40px)
         clamp(15px, 3vw, 30px);
 
+    font-size: clamp(14px, 2vw, 18px);
+
     box-sizing: border-box;
 }
 
 .content p {
     margin-bottom: 12px;
-    font-size: 14pt;
+    font-size: clamp(14px, 2vw, 18px);
     line-height: 1.6;
     text-align: justify;
     color: #0EE59F;
@@ -81,6 +83,7 @@ p
 }
 
 .header-center {
+    z-index: 150;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -89,7 +92,7 @@ p
 footer {
     display: flex;
     justify-content: center;
-    margin: 60px 0px 10px 0px
+    margin: 60px 0px 10px 0px;
 }
 
 .footer-center p {
@@ -103,6 +106,7 @@ footer {
 .logo:visited,
 .logo:hover,
 .logo:active {
+    white-space: nowrap;
     font-size: 24pt;
     color: #0EE59F;
     font-family: 'Play';
@@ -116,6 +120,7 @@ footer {
 }
 
 .menu-button {
+    z-index: 150;
     background: none;
     border: none;
     padding: 0;
@@ -186,7 +191,7 @@ footer {
     width: 100%;
     height: 115px;
 
-    z-index: -1;
+    z-index: 100;
 
     background:
         linear-gradient(
@@ -206,7 +211,7 @@ footer {
     mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
 }
 
-.bottom_screen_effect
+.bottom_background_screen_effect
 {
     position: fixed;
     bottom: 0;
@@ -223,5 +228,25 @@ footer {
             #000000 0%,
             rgba(0, 0, 0, 0.5) 30%,
             transparent 95%
+        )
+}
+
+.bottom_foreground_screen_effect
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    z-index: 100;
+
+    background:
+        linear-gradient(
+            to top,
+            #000000 0%,
+            rgba(0, 0, 0, 0.5) 10%,
+            transparent 25%
         )
 }
