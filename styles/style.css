@@ -61,11 +61,11 @@ p
 }
 
 .content p {
+    margin-bottom: 12px;
     font-size: 14pt;
     line-height: 1.6;
     text-align: justify;
     color: #0EE59F;
-    white-space: pre-line;
     font-family: 'Exo'
 }
 
@@ -73,7 +73,6 @@ p
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    background: #111;
     height: 40px;
 }
 
@@ -124,6 +123,7 @@ footer {
 
     position: fixed;
     top: 15px;
+    left: 2%;
 
     cursor: pointer;
     color: #0EE59F;
@@ -143,14 +143,15 @@ footer {
 .dropdown {
     position: fixed;
     top: 60px;
-    left: 24px;
+    left: 2%;
     padding: 6px;
     z-index: 999;
-    background: #1a1a1acc;
+    background: #000000cc;
     border: 1px solid #0BA572;
     display: flex;
     flex-direction: column;
     min-width: 120px;
+    padding: 0;
 }
 
 .dropdown a {
@@ -220,7 +221,7 @@ footer {
         linear-gradient(
             to top,
             #000000 0%,
-            rgba(0, 0, 0, 0.5) 10%,
-            transparent 100%
+            rgba(0, 0, 0, 0.5) 30%,
+            transparent 95%
         )
 }
