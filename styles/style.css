@@ -49,7 +49,7 @@ p
 }
 
 .content {
-    width: min(90vw, 1100px);
+    width: min(80vw, 1100px);
 
     margin: 0 auto;
 
@@ -184,7 +184,7 @@ footer {
     left: 0;
 
     width: 100%;
-    height: 90px;
+    height: 115px;
 
     z-index: -1;
 
