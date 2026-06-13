@@ -236,7 +236,7 @@ footer {
         linear-gradient(
             to top,
             #000000 0%,
-            rgba(0, 0, 0, 0.5) 30%,
+            rgba(0, 0, 0, 0.5) 20%,
             transparent 95%
         )
 }
