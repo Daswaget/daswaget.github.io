@@ -41,6 +41,25 @@ body
         );
 }
 
+.dswg_icon {
+    width: min(80vw, 600px);
+    height: auto;
+
+    display: block;
+    margin: 0 auto;
+
+    user-select: none;
+    pointer-events: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.center {
+    text-align: center !important;
+}
+
 .content {
     flex: 1;
     width: min(82vw, 1100px);
@@ -65,6 +84,7 @@ body
 .content li {
     color: #0EE59F;
     font-family: 'Play';
+    text-align: justify;
     margin-bottom: 6px;
 }
 
@@ -86,6 +106,7 @@ body
 
 .content p,
 .content a {
+    text-align: justify;
     line-height: 1.6;
     font-size: clamp(15px, 2vw, 18px);
 }
@@ -282,7 +303,6 @@ footer {
     -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
 }
-
 
 .bottom_background_screen_effect,
 .bottom_foreground_screen_effect
