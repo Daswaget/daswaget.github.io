@@ -42,7 +42,7 @@ body
 }
 
 .dswg_icon {
-    width: min(80vw, 600px);
+    width: min(70vw, 600px);
     height: auto;
 
     display: block;
