@@ -46,7 +46,7 @@ body
     height: auto;
 
     display: block;
-    margin: 0 auto;
+    margin: 100px auto;
 
     user-select: none;
     pointer-events: none;
