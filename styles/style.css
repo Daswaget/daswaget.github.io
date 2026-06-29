@@ -164,6 +164,7 @@ header {
 }
 
 .header-left {
+    z-index: 150;
     position: relative;
 }
 
@@ -175,7 +176,10 @@ header {
 }
 
 .header-right {
-    position: relative;
+    z-index: 150;
+    position: absolute;
+    top: 15px;
+    right: 2%;
 }
 
 footer {
@@ -216,15 +220,10 @@ footer {
 }
 
 .change-language-button {
-    z-index: 150;
     background: none;
     border: none;
     padding: 0;
     margin: 0;
-
-    position: fixed;
-    top: 15px;
-    right: 2%;
 
     cursor: pointer;
     color: #0EE59FBF;
@@ -241,7 +240,6 @@ footer {
 }
 
 .menu-button {
-    z-index: 150;
     background: none;
     border: none;
     padding: 0;
