@@ -12,29 +12,20 @@ function loadContent(url, elementId, callback) {
 
             if (callback) callback();
         })
-        .catch(error => console.error('Error:', error));
+        .catch(error => console.error("Error:", error));
 }
+
 document.addEventListener("DOMContentLoaded", function () {
-    loadContent('/blocks/header.html', 'header', initHeaderMenu);
-    loadContent('/blocks/footer.html', 'footer');
-    loadContent('/blocks/screen_effect.html', 'effects');
+    loadContent("/blocks/header.html", "header", initHeader);
+    loadContent("/blocks/footer.html", "footer");
+    loadContent("/blocks/screen_effect.html", "effects");
 });
-document.addEventListener("DOMContentLoaded", function () {
-    const btn = document.getElementById("menuButton");
-    const menu = document.getElementById("dropdownMenu");
 
-    if (!btn || !menu) return;
+function initHeader() {
+    initHeaderMenu();
+    initLanguageButton();
+}
 
-    btn.addEventListener("click", function () {
-        menu.classList.toggle("hidden");
-    });
-
-    document.addEventListener("click", function (e) {
-        if (!menu.contains(e.target) && e.target !== btn) {
-            menu.classList.add("hidden");
-        }
-    });
-});
 function initHeaderMenu() {
     const btn = document.getElementById("menuButton");
     const menu = document.getElementById("dropdownMenu");
@@ -48,5 +39,21 @@ function initHeaderMenu() {
 
     document.addEventListener("click", function () {
         menu.classList.add("hidden");
+    });
+}
+
+function initLanguageButton() {
+    const btn = document.getElementById("changeLanguageButton");
+
+    if (!btn) return;
+
+    btn.addEventListener("click", function () {
+        const path = window.location.pathname;
+
+        if (path.startsWith("/ru/")) {
+            window.location.href = path.replace(/^\/ru/, "");
+        } else {
+            window.location.href = "/ru" + path;
+        }
     });
 }
