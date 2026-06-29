@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
     <url>
         <loc>https://daswaget.github.io</loc>
-        <lastmod>2026-06-20</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>always</changefreq>
         <priority>1</priority>
     </url>
     <url>
-        <loc>https://daswaget.github.io/wiki/ekosyz_eng</loc>
-        <lastmod>2026-03-29</lastmod>
+        <loc>https://daswaget.github.io/ru</loc>
+        <lastmod>2026-06-29</lastmod>
         <changefreq>always</changefreq>
-        <priority>0.8</priority>
+        <priority>1</priority>
     </url>
 </urlset>

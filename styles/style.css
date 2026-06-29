@@ -227,13 +227,17 @@ footer {
     right: 2%;
 
     cursor: pointer;
-    color: #0EE59F;
+    color: #0EE59FBF;
 
     user-select: none;
 
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+}
+
+.change-language-button:hover {
+    color: #94e7cd;
 }
 
 .menu-button {
@@ -248,7 +252,7 @@ footer {
     left: 2%;
 
     cursor: pointer;
-    color: #0EE59F;
+    color: #0EE59FBF;
     font-family: 'Play';
 
     user-select: none;
